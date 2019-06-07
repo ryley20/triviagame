@@ -11,197 +11,6 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <title>Trivia Game</title>
-    <style>
-        #correctAnswers {
-            font-size: 25px;
-            font-weight: bold;
-            text-align: center;
-            margin-top: 50px;
-
-
-        }
-
-        #incorrectAnswers {
-            font-size: 25px;
-            font-weight: bold;
-            text-align: center;
-            margin-top: 70px;
-
-
-        }
-
-        #unanswered {
-            font-size: 25px;
-            font-weight: bold;
-            text-align: center;
-            margin-top: 90px;
-        }
-
-        .btn1 {
-            width: 93%;
-            text-align: center;
-            margin-top: 90px;
-        }
-
-        .btn1:hover {
-            color: salmon;
-        }
-
-        .wrapper {
-            padding-left: 2.5%;
-            padding-top: 20px;
-            margin: auto;
-            display: relative;
-            background-color: #FF5964;
-            background-color: aqua;
-            width: 600px;
-            height: 630px;
-        }
-
-        .header {
-            text-align: center;
-            width: 95%;
-            background-color: #FF5964;
-            background-color: #C92E7E;
-            height: 100px;
-            display: inline-block;
-            font weight: bold;
-        }
-
-        .timeRemaining {
-            text-align: center;
-            width: 95%;
-            background-color: #FF5964;
-            background-color: aqua;
-            height: 100px;
-            display: inline-block;
-            padding-top: 30px;
-            font-size: 40px;
-            font-weight: bold;
-        }
-
-        body {
-            background-image: url("assets/images/acastro.jpg");
-            padding-top: 20px;
-        }
-
-        .btn {
-            width: 80%;
-            margin-top: 50px;
-        }
-
-        .wrapper {
-            padding-left: 2.5%;
-            padding-top: 20px;
-            margin: auto;
-            display: relative;
-            background-color: #FF5964;
-            background-color: aqua;
-            width: 600px;
-            height: 1100px;
-        }
-
-        body {
-            font-size: 20px;
-            font-family: sans-serif;
-            color: #333;
-        }
-
-        .question {
-
-            font-weight: 600;
-        }
-
-        .answers {
-            visibility: inherit;
-            margin-bottom: 20px;
-        }
-
-        .answers label {
-            visibility: inherit;
-            display: block;
-        }
-
-        #submitNew {
-            font-family: sans-serif;
-            font-size: 20px;
-            background-color: salmon;
-            color: #fff;
-            border: 0px;
-            border-radius: 3px;
-            padding: 20px;
-            cursor: pointer;
-            margin-bottom: 20px;
-        }
-
-        #submitNew:hover {
-            background-color: #38a;
-        }
-
-        .header {
-            text-align: center;
-            width: 95%;
-            background-color: #FF5964;
-            background-color: #C92E7E;
-            height: 100px;
-            display: inline-block;
-        }
-
-        .timeRemaining {
-            visibility: inherit;
-            text-align: center;
-            width: 95%;
-            background-color: #FF5964;
-            background-color: aqua;
-            height: 100px;
-            display: inline-block;
-            padding-top: 30px;
-            font-size: 40px;
-            font-weight: bold;
-        }
-
-        body {
-            background-image: url("assets/images/acastro.jpg");
-            padding-top: 20px;
-            font-size: 20px;
-            font-family: sans-serif;
-            color: #333;
-        }
-
-        .question {
-            visibility: inherit;
-            font-weight: 600;
-            color: black;
-            font-weight: 30px;
-        }
-
-        .answers {
-            visibility: inherit;
-            margin-bottom: 20px;
-        }
-
-        .answers label {
-            visibility: inherit;
-            display: block;
-        }
-
-        #submit {
-            visibility: inherit;
-            font-family: sans-serif;
-            font-size: 20px;
-            background-color: #279;
-            color: #fff;
-            border: 0px;
-            border-radius: 3px;
-            padding: 20px;
-            cursor: pointer;
-            margin-bottom: 20px;
-        }
-
-        #submit:hover {
-            background-color: palevioletred;
-        }
-    </style>
 
 </head>
 
@@ -221,13 +30,13 @@
         
     </div>
 
-    <div class="wrapper" id="results" style="display: none;">
+    <div class="wrapper2" id="results" style="display: none;">
 
         <div class="header">
             <h1>COMEDY TRIVIA</h1>
         </div>
 
-        <div id="correctAnswers"></div>
+        <div id="correctAnswers">correct answers:</div>
 
         <div id="incorrectAnswers">incorrect answers:</div>
 
@@ -239,7 +48,13 @@
 
     </div>
            
-
+    <style>
+          
+        body {
+    background-image: url("assets/images/acastro.jpg");
+    padding-top: 20px;
+        }
+    </style>
 
 
     <!-- javascript link -->

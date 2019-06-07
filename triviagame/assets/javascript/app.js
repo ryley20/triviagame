@@ -52,24 +52,23 @@ var timer = 60;
   
   
   function showResults() {
-    var answerContainers = quizContainer.querySelectorAll(".answers");
+    var answerContainers = quizContainer.querySelectorAll("correctAnswers");
     myQuestions.forEach((currentQuestion, questionNumber) => {
       var answerContainer = answerContainers[questionNumber];
       var selector = `input[name=question${questionNumber}]:checked`;
       var userAnswer = (answerContainer.querySelector(selector) || {}).value;
 
       if (userAnswer === currentQuestion.correctAnswer) {
-        numCorrect++;
-
+        numCorrect =+1;
+      }
+      if (userAnswer === currentQuestion.incorrectAnswer) {
+        numIncorrect =+1;
       }
     });
 
     resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
   };
 
-  var numCorrect = 0;
-  var numIncorrect = 0;
-  var numUnanswered = 0;
   var quizContainer = document.getElementById("quiz");
   var resultsContainer = document.getElementById("results");
   var submitButton = document.getElementById("submit");
