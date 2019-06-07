@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Trivia Game</title>
+
+</head>
+
+<body>
+    <!-- html -->
+    <div class="wrapper" id="quizWrapper">
+
+        <div class="header">
+            <h1>COMEDY TRIVIA</h1>
+        </div>
+
+        <div class="timeRemaining" id="timeRemaining">Time Remaining: 60</div>
+
+        <div id="quiz"></div>
+
+        <button id="submit" onclick="finishQuiz()">Submit Quiz</button>
+        
+    </div>
+
+    <div class="wrapper2" id="results" style="display: none;">
+
+        <div class="header">
+            <h1>COMEDY TRIVIA</h1>
+        </div>
+
+        <div id="correctAnswers">correct answers:</div>
+
+        <div id="incorrectAnswers">incorrect answers:</div>
+
+        <div id="unanswered">unanswered:</div>
+
+        <a href="file:///C:/Users/ryley/Desktop/gitfolder/triviagame/triviagame/index.html" <button type="button"
+            class="btn1 btn-secondary btn-lg">restart quiz</button>
+        </a>
+
+    </div>
+           
+    <style>
+          
+        body {
+    background-image: url("assets/images/acastro.jpg");
+    padding-top: 20px;
+        }
+    </style>
+
+
+    <!-- javascript link -->
+    <script src="assets/javascript/app.js"></script>
+
+
+</body>
+
+</html>
