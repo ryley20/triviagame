@@ -45,7 +45,7 @@ font-weight: bold;
 }
 
 body {
-background-image: url("assets/images/acastro.jpg");
+background-image: url("triviagame/assets/images/acastro.jpg");
 padding-top: 20px;
 }
 
@@ -195,7 +195,7 @@ body {
 }
 
 .body {
-    background-image: url("assets/images/acastro.jpg");
+    background-image: url("triviagame/assets/images/acastro.jpg");
     padding-top: 20px;
     font-size: 20px;
     font-family: sans-serif;
